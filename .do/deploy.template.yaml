@@ -1,0 +1,17 @@
+spec:
+  name: digital-ocean-deployment
+  services:
+    - environment_slug: node-js
+      github:
+        branch: main
+        deploy_on_push: true
+        repo: Synvox/digital-ocean-reproduction
+      name: service1
+      source_dir: "/service1"
+    - environment_slug: node-js
+      github:
+        branch: main
+        deploy_on_push: true
+        repo: Synvox/digital-ocean-reproduction
+      name: service2
+      source_dir: "/service2"
